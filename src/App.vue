@@ -1,6 +1,6 @@
 <template>
   <h1>Reaction Timer</h1>
-  <button @click="start">show delay</button>
+  <button @click="start">Play</button>
   <BlockComponent v-if="isPlaying" :delay="delay" @end="endGame" />
   <ResultsComponent v-if="showResults" :score="score" />
 </template>
